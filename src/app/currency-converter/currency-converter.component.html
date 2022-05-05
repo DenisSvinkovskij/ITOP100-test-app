@@ -1,0 +1,19 @@
+<div class="converter">
+  <div class="title">Converter</div>
+  <div class="converter-container">
+    <app-currency-input
+      [amount]="amountFrom"
+      [currency]="currencyFrom"
+      [rates]="ratesOptions"
+      (onChangeAmount)="onChangeAmountFrom($event)"
+      (onChangeCurrency)="onChangeCurrencyFrom($event)"
+    ></app-currency-input>
+    <app-currency-input
+      [amount]="amountTo"
+      [currency]="currencyTo"
+      [rates]="ratesOptions"
+      (onChangeAmount)="onChangeAmountTo($event)"
+      (onChangeCurrency)="onChangeCurrencyTo($event)"
+    ></app-currency-input>
+  </div>
+</div>

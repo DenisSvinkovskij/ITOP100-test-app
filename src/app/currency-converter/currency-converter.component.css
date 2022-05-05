@@ -1,0 +1,27 @@
+.converter {
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.converter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .converter-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="group">
+  <input
+    type="number"
+    class="input"
+    min="0"
+    [value]="amount"
+    (input)="onAmountChange($event)"
+  />
+  <select [value]="currency" (input)="onCurrencyChange($event)" class="select">
+    <option [value]="currency" ngDefaultControl>{{ currency }}</option>
+    <option *ngFor="let rate of rates" [value]="rate">{{ rate }}</option>
+  </select>
+</div>
